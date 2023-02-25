@@ -4,7 +4,6 @@ import (
 	// "encoding/json"
 	// "fmt"
 
-	"GO_STUDY/src/WEB1/myapp"
 	"net/http"
 )
 
@@ -54,7 +53,7 @@ func main() { //핸들러 등록 , 어떤 도메인 올떄 어떻게 할것인�
 
 	// mux.Handle("/foo", &fooHandler{})
 
-	http.ListenAndServe(":3000", myapp.NewHttpHandler)
+	http.ListenAndServe(":3000", myapp.NewHttpHandler())
 }
 
 // package main
